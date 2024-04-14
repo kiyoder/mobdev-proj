@@ -15,11 +15,11 @@
 
 
     <string name="clear">AC</string>
-    <string name="modulo">%</string>
+    <string name="parenthesis">()</string>
     <string name="exponent">^</string>
     <string name="delete">DEL</string>
-    <string name="multiply">×</string>
-    <string name="divide">÷</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
     <string name="add">+</string>
     <string name="subtract">-</string>
     <string name="point">.</string>
