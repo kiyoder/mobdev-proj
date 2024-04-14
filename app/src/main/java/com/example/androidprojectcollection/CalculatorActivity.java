@@ -175,7 +175,7 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
     }
 
     private double evaluate(String expression) {
-        String[] tokens = expression.split("(?<=[-+*/()])|(?=[-+*/()])");
+        String[] tokens = expression.split("(?<=[-+*/^()])|(?=[-+*/^()])");
 
         // Convert infix to postfix
         StringBuilder postfix = new StringBuilder();
@@ -211,10 +211,17 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
             if (Character.isDigit(c) || token.length() > 1 && Character.isDigit(token.charAt(1))) {
                 evalStack.push(Double.parseDouble(token));
             } else {
-                double b = evalStack.pop();
-                double a = evalStack.pop();
-                double result = applyOperation(c, a, b);
-                evalStack.push(result);
+                if (c == '^') {
+                    double b = evalStack.pop();
+                    double a = evalStack.pop();
+                    double result = Math.pow(a, b);
+                    evalStack.push(result);
+                } else {
+                    double b = evalStack.pop();
+                    double a = evalStack.pop();
+                    double result = applyOperation(c, a, b);
+                    evalStack.push(result);
+                }
             }
         }
 
@@ -226,6 +233,8 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
             return 1;
         } else if (op == '*' || op == '/') {
             return 2;
+        } else if (op == '^') {
+            return 3;
         } else {
             return 0;
         }
