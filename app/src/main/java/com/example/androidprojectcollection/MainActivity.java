@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     Button btn3;
     Button btn4;
 
+    Button btnIntents1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,16 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
+        btnIntents1 = (Button) findViewById(R.id.btnPassingIntents);
+        btnIntents1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intIntents1 = new Intent(MainActivity.this, PassingIntentsExercise.class);
+                startActivity(intIntents1);
+            }
+
+        });
 
 
 

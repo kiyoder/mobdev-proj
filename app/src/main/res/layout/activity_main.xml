@@ -11,7 +11,7 @@
         android:id="@+id/btnLayoutExercise"
         android:layout_width="240dp"
         android:layout_height="50dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="72dp"
         android:text="Layout Exercise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -19,43 +19,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnButtonExercise"
-        android:layout_width="240dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:text="Button Exercise"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLayoutExercise" />
-
-    <Button
-        android:id="@+id/btnMatchGame"
-        android:layout_width="240dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="31dp"
-        android:text="Match Game"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMidterms" />
-
-    <Button
-        android:id="@+id/btnMidterms"
-        android:layout_width="240dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:text="Midterm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalculator" />
-
-    <Button
         android:id="@+id/btnCalculator"
         android:layout_width="240dp"
         android:layout_height="50dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="25dp"
         android:text="Calculator Activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -63,21 +30,21 @@
         app:layout_constraintTop_toBottomOf="@+id/btnButtonExercise" />
 
     <Button
-        android:id="@+id/btnPassingIntents"
+        android:id="@+id/btnMidterms"
         android:layout_width="240dp"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:text="Passing Intents"
+        android:layout_marginTop="25dp"
+        android:text="Midterm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMatchGame" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculator" />
 
     <Button
         android:id="@+id/btnFragments"
         android:layout_width="240dp"
         android:layout_height="50dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="25dp"
         android:text="Fragments"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -85,16 +52,49 @@
         app:layout_constraintTop_toBottomOf="@+id/btnPassingIntents" />
 
     <Button
+        android:id="@+id/btnPassingIntents"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Passing Intents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMatchGame" />
+
+    <Button
         android:id="@+id/btnMenus"
         android:layout_width="240dp"
         android:layout_height="50dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="25dp"
         android:text="Menus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFragments"
-        app:layout_constraintVertical_bias="0.027" />
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/btnMatchGame"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Match Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMidterms" />
+
+    <Button
+        android:id="@+id/btnButtonExercise"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Button Exercise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLayoutExercise" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
