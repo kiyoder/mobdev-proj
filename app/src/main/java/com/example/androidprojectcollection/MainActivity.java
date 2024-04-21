@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn1;
     Button btn2;
     Button btn3;
-    Button btn4, btn5;
+    Button btn4;
 
 
     @Override
@@ -58,18 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent int4 = new Intent(MainActivity.this, MatchGameActivity.class);
                 Toast.makeText(getApplicationContext(), "Yoshinori L. Kyono Jr. Opening Match Game!", Toast.LENGTH_LONG).show();
                 startActivity(int4);
-            }
-
-
-        });
-
-        btn5 = (Button) findViewById(R.id.btnIntents);
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent int5 = new Intent(MainActivity.this, PassingIntentsActivity.class);
-                Toast.makeText(getApplicationContext(), "Yoshinori L. Kyono Jr. Opening Match Game!", Toast.LENGTH_LONG).show();
-                startActivity(int5);
             }
 
 

@@ -12,9 +12,6 @@
         android:theme="@style/Theme.AndroidProjectCollection"
         tools:targetApi="31">
         <activity
-            android:name=".PassingIntentsActivity"
-            android:exported="false" />
-        <activity
             android:name=".MatchGameActivity"
             android:exported="false" />
         <activity
