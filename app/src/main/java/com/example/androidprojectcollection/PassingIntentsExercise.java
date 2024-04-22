@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PassingIntentsExercise extends AppCompatActivity {
 
-    private Button submitButton;
+    private Button submitButton, clearButton;
     private EditText eFName, eLName, eBDay, ePNum, eEmail, eAddress, eNationality, eReligion, eProgram;
     private RadioButton rbMale, rbFemale, rbOthers, rbLvl1, rbLvl2, rbLvl3, rbLvl4;
 
@@ -47,7 +47,6 @@ public class PassingIntentsExercise extends AppCompatActivity {
 
 
         submitButton = findViewById(R.id.btnSubmit);
-
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,7 +70,7 @@ public class PassingIntentsExercise extends AppCompatActivity {
 
                 String yrLvl;
 
-                if(rbLvl1.isChecked()) yrLvl = "Male";
+                if(rbLvl1.isChecked()) yrLvl = "1";
                 else if(rbLvl2.isChecked()) yrLvl = "2";
                 else if(rbLvl3.isChecked()) yrLvl = "3";
                 else if(rbLvl4.isChecked()) yrLvl = "4";
@@ -81,6 +80,7 @@ public class PassingIntentsExercise extends AppCompatActivity {
                 Pass.putExtra("fname-key", FName);
                 Pass.putExtra("lname-key", LName);
                 Pass.putExtra("gender-key", gender);
+                Pass.putExtra("birthday-key", BDay);
                 Pass.putExtra("pnumber-key", PNum);
                 Pass.putExtra("email-key", EMail);
                 Pass.putExtra("address-key", Address);
@@ -89,9 +89,40 @@ public class PassingIntentsExercise extends AppCompatActivity {
                 Pass.putExtra("program-key", Program);
                 Pass.putExtra("yearlevel-key", yrLvl);
 
+                startActivity(Pass);
+
 
                 Toast.makeText(PassingIntentsExercise.this, "Submit button clicked", Toast.LENGTH_SHORT).show();
             }
         });
+
+        clearButton = findViewById(R.id.btnClear);
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                eFName.setText("");
+                eLName.setText("");
+                rbMale.setChecked(false);
+                rbFemale.setChecked(false);
+                rbOthers.setChecked(false);
+                eBDay.setText("");
+                ePNum.setText("");
+                eEmail.setText("");
+                eAddress.setText("");
+                eNationality.setText("");
+                eReligion.setText("");
+                eProgram.setText("");
+
+                rbLvl1.setChecked(false);
+                rbLvl2.setChecked(false);
+                rbLvl3.setChecked(false);
+                rbLvl4.setChecked(false);
+
+
+            }
+        });
+
     }
 }
