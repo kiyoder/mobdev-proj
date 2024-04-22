@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn3;
     Button btn4;
 
-    Button btnIntents1;
+    Button btnIntents1, btnMenu;
 
 
     @Override
@@ -72,6 +72,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intIntents1 = new Intent(MainActivity.this, PassingIntentsExercise.class);
                 startActivity(intIntents1);
+            }
+
+        });
+
+        btnMenu = (Button) findViewById(R.id.btnMenus);
+        btnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intMenu = new Intent(MainActivity.this, MenuExercise.class);
+                startActivity(intMenu);
             }
 
         });
