@@ -6,10 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MenuExercise">
 
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="368dp"/>
+        android:id="@+id/btnTransformingButton"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,11 @@
         android:id="@+id/mChange"
         android:title="Change">
         <menu>
-            <item android:title="Item" />
+            <item android:title="Change color" />
+            <item android:title="Add text" />
+            <item android:title="Change color text" />
+            <item android:title="Bold Text" />
+            <item android:title="Change to Oval" />
         </menu>
     </item>
     <item
