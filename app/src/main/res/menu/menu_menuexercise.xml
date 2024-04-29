@@ -5,11 +5,16 @@
         android:id="@+id/mChange"
         android:title="Change">
         <menu>
-            <item android:title="Change color" />
-            <item android:title="Add text" />
-            <item android:title="Change color text" />
-            <item android:title="Bold Text" />
-            <item android:title="Change to Oval" />
+            <item android:title="Change color to Black"
+                android:id="@+id/mChangeColor"/>
+            <item android:title="Add text"
+                android:id="@+id/mAddText"/>
+            <item android:title="Change text color"
+                android:id="@+id/mChangeTextColor"/>
+            <item android:title="Bold Text"
+                android:id="@+id/mBoldText"/>
+            <item android:title="Increase text size"
+                android:id="@+id/mIncreaseSize"/>
         </menu>
     </item>
     <item
