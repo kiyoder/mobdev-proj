@@ -100,7 +100,7 @@ public class MenuExercise extends AppCompatActivity {
                 textAdded = false;
 
                 Toast.makeText(this, "Reset CLicked", Toast.LENGTH_SHORT).show();
-                btnChanger.setBackgroundColor(Color.GREEN);
+                btnChanger.setBackgroundColor(Color.TRANSPARENT);
                 btnChanger.setText("");
                 btnChanger.setTextColor(Color.WHITE);
                 btnChanger.setTextSize(18);

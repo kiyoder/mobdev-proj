@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         btnMaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intMaps = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:11.96362199175654, 121.92349818190378"));
+                Intent intMaps = new Intent(MainActivity.this, MapsExercise.class);
                 startActivity(intMaps);
             }
 
