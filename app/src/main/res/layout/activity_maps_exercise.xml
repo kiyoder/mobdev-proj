@@ -27,44 +27,64 @@
         android:layout_alignParentStart="true"/>
 
 
-
-    <Button
-        android:id="@+id/btnStreetView"
-        android:layout_width="240dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="4dp"
-        android:text="Street View"
+    <LinearLayout
+        android:layout_width="211dp"
+        android:layout_height="91dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewPlace" />
+        app:layout_constraintTop_toTopOf="@+id/imgBackground">
 
-    <Button
-        android:id="@+id/btnOpenGmaps"
-        android:layout_width="240dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="264dp"
-        android:text="Open Google Maps"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/txtBoracay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La Boracay"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btnViewPlace"
-        android:layout_width="240dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="4dp"
-        android:text="View Place"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOpenGmaps" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnCloseMaps"
-        android:layout_width="240dp"
-        android:layout_height="50dp"
-        android:text="Close"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStreetView" />
+            <ImageButton
+                android:id="@+id/imgbtnMaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@android:drawable/ic_dialog_map"
+                android:tint="#000000" />
+
+            <ImageButton
+                android:id="@+id/imgbtnViewPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="center"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                android:src="@android:drawable/ic_menu_mapmode" />
+
+            <ImageButton
+                android:id="@+id/imgbtnStreetView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_myplaces" />
+
+            <ImageButton
+                android:id="@+id/imgbtnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@android:drawable/btn_dialog" />
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,16 +7,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MapsExercise extends AppCompatActivity {
 
-    Button btnGMaps;
-    Button btnViewImage;
 
-    Button btnShowStreetView;
 
-    Button btnCloseMaps;
+    ImageButton imgbtnGMaps, imgbtnViewImage, imgbtnStreetView, imgbtnCloseMaps;
     private ImageView imgSetBackground, imgStreetView;
 
     @Override
@@ -28,10 +26,11 @@ public class MapsExercise extends AppCompatActivity {
         imgStreetView = findViewById(R.id.imgStreetView);
 
 
-        btnGMaps = (Button) findViewById(R.id.btnOpenGmaps);
 
+        //NEW IMPLEMENTATION
 
-        btnGMaps.setOnClickListener(new View.OnClickListener() {
+        imgbtnGMaps = (ImageButton) findViewById(R.id.imgbtnMaps);
+        imgbtnGMaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intMaps = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:11.96362199175654, 121.92349818190378"));
@@ -40,8 +39,8 @@ public class MapsExercise extends AppCompatActivity {
 
         });
 
-        btnViewImage = (Button) findViewById(R.id.btnViewPlace);
-        btnViewImage.setOnClickListener(new View.OnClickListener() {
+        imgbtnViewImage = (ImageButton) findViewById(R.id.imgbtnViewPlace);
+        imgbtnViewImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -53,8 +52,8 @@ public class MapsExercise extends AppCompatActivity {
         });
 
 
-        btnShowStreetView = (Button) findViewById(R.id.btnStreetView);
-        btnShowStreetView.setOnClickListener(new View.OnClickListener() {
+        imgbtnStreetView = (ImageButton) findViewById(R.id.imgbtnStreetView);
+        imgbtnStreetView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 imgStreetView.setVisibility(View.VISIBLE);
@@ -62,8 +61,8 @@ public class MapsExercise extends AppCompatActivity {
 
         });
 
-        btnCloseMaps = (Button) findViewById(R.id.btnCloseMaps);
-        btnCloseMaps.setOnClickListener(new View.OnClickListener() {
+        imgbtnCloseMaps = (ImageButton) findViewById(R.id.imgbtnClose);
+        imgbtnCloseMaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
