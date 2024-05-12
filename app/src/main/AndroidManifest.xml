@@ -12,6 +12,12 @@
         android:theme="@style/Theme.AndroidProjectCollection"
         tools:targetApi="31">
         <activity
+            android:name=".MapsExercise"
+            android:exported="false" />
+        <activity
+            android:name=".mapsdirectory"
+            android:exported="false" />
+        <activity
             android:name=".MenuExercise"
             android:exported="false" />
         <activity
